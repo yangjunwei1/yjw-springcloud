@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: admin-service
+server:
+  port: 8000
+  servlet:
+    context-path: /
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7003/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: admin-service

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: web-admin-feign
+server:
+  port: 8004
+  servlet:
+    context-path: /
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: web-admin-feign
+  client:
+    service-url:
+      defaultZone: http://localhost:7003/eureka/
+feign:
+  hystrix:
+    enabled: true
